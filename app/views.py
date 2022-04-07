@@ -10,6 +10,7 @@ from django.utils.decorators import method_decorator
 
 class ProductView(View):
 	def get(self, request):
+		
 		totalitem = 0
 		topwears = Product.objects.filter(category='TW')
 		bottomwears = Product.objects.filter(category='BW')
